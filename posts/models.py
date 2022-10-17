@@ -4,6 +4,10 @@ from django.db import models
 from django.utils.text import slugify
 
 # Create your models here.
+class Posts(models.Model):
+    pages = models.CharField(max_length=100)
+    owner = models.CharField(max_length=100)
+
 class Post(models.Model):
     slug = models.SlugField(default='', null=False)
     title = models.CharField(max_length=100)

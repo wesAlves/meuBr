@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     "debug_toolbar",
 
     #My apps
-    'home_page'
+    'home_page',
+    'posts'
 ]
 
 MIDDLEWARE = [
