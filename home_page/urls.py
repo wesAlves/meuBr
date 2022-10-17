@@ -8,7 +8,7 @@ router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
-    path("", views.starting_page, name='home_page'),
-    path('api/', include(router.urls)),
+    # path("", views.starting_page, name='home_page'),
+    path('', include(router.urls)),
     # path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
