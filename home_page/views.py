@@ -6,7 +6,7 @@ from .serializers.serializers import UserSerializer, GroupSerializer
 
 # Create your views here.
 def starting_page(request):
-    return HttpResponse('hello this is home')
+    return HttpResponse('hello this is')
 
 
 
