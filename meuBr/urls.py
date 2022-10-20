@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-import home_page
+# from rest_framework import routers, serializers, viewsets
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('__debug__/', include('debug_toolbar.urls')),
     path('home/', include('home_page.urls')),
+    path('posts/', include('posts.urls'))
 ]
